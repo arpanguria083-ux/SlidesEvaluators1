@@ -1070,16 +1070,33 @@
       No subscriptions. Use online APIs or run entirely on your machine with local models — Ollama and LM Studio supported for full data privacy. Free forever.
     </p>
 
-    <div style="display: inline-block; margin-top: 24px; padding: 6px 14px; background: rgba(170,255,0,0.12); border: 1px solid var(--lime); border-radius: 999px; font-size: 0.78rem; font-weight: 700; color: var(--lime); letter-spacing: 0.08em;">
-      ✨ NEW · v0.1.0 — TRIPLE OCR (SURYA + PADDLEOCR + GOTOCR2)
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 24px;">
+      <div style="display: inline-block; padding: 6px 14px; background: rgba(170,255,0,0.15); border: 1px solid var(--lime); border-radius: 999px; font-size: 0.78rem; font-weight: 700; color: var(--lime); letter-spacing: 0.08em;">
+        ✨ LATEST · v0.1.0 · RECOMMENDED
+      </div>
+      <div style="display: inline-block; padding: 6px 14px; background: rgba(0,212,204,0.12); border: 1px solid var(--cyan); border-radius: 999px; font-size: 0.78rem; font-weight: 700; color: var(--cyan); letter-spacing: 0.08em;">
+        🔍 TRIPLE OCR ENGINE
+      </div>
+    </div>
+
+    <!-- v0.1.0 highlight panel -->
+    <div style="max-width: 800px; margin: 20px auto 0; padding: 18px 24px; background: rgba(170,255,0,0.06); border: 1px solid rgba(170,255,0,0.25); border-radius: 12px; text-align: left;">
+      <p style="font-size: 0.82rem; color: rgba(255,255,255,0.75); line-height: 1.7; margin: 0;">
+        <strong style="color: var(--lime);">What's new in v0.1.0:</strong> Three OCR engines bundled and auto-chained for max accuracy across deck types —
+        <strong>Surya</strong> (layout-aware, tables/headers),
+        <strong>PaddleOCR</strong> (multilingual, dense text),
+        <strong>GotOCR2</strong> (vision-LM fallback for stylized fonts &amp; low-quality scans).
+        Bigger download (~454 MB) because all 3 models ship offline — no internet needed at runtime.
+      </p>
     </div>
 
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 800px; margin: 24px auto 0; text-align: left;">
       <!-- Portable Version -->
-      <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(170,255,0,0.3); border-radius: 12px; padding: 28px; text-align: center;">
+      <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(170,255,0,0.3); border-radius: 12px; padding: 28px; text-align: center; position: relative;">
+        <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--lime); color: var(--dark); font-size: 0.65rem; font-weight: 900; padding: 3px 10px; border-radius: 999px; letter-spacing: 0.1em;">RECOMMENDED</div>
         <div style="font-weight: 700; font-size: 0.9rem; color: var(--lime); margin-bottom: 12px; letter-spacing: 0.08em;">PORTABLE · v0.1.0</div>
-        <h3 style="font-weight: 700; margin-bottom: 8px; font-size: 0.95rem;">No Installation</h3>
-        <p style="font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-bottom: 20px; line-height: 1.6;">Double-click to run. All 3 OCR backends bundled.</p>
+        <h3 style="font-weight: 700; margin-bottom: 8px; font-size: 0.95rem;">No Installation · Triple OCR</h3>
+        <p style="font-size: 0.8rem; color: rgba(255,255,255,0.55); margin-bottom: 20px; line-height: 1.6;">Double-click to run. All 3 OCR engines (Surya + PaddleOCR + GotOCR2) bundled offline.</p>
         <a
           href="https://github.com/arpanguria083-ux/SlidesEvaluators1/releases/download/v0.1.0/SlideForge.AI.Lite-0.0.0-portable.exe"
           class="btn-download"
@@ -1091,15 +1108,16 @@
             <polyline points="7 10 12 15 17 10"/>
             <line x1="12" y1="15" x2="12" y2="3"/>
           </svg>
-          <span>Portable · 454 MB</span>
+          <span>Portable v0.1.0 · 454 MB</span>
         </a>
       </div>
 
       <!-- Installer Version -->
-      <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(0,212,204,0.3); border-radius: 12px; padding: 28px; text-align: center;">
+      <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(0,212,204,0.3); border-radius: 12px; padding: 28px; text-align: center; position: relative;">
+        <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--cyan); color: var(--dark); font-size: 0.65rem; font-weight: 900; padding: 3px 10px; border-radius: 999px; letter-spacing: 0.1em;">RECOMMENDED</div>
         <div style="font-weight: 700; font-size: 0.9rem; color: var(--cyan); margin-bottom: 12px; letter-spacing: 0.08em;">INSTALLER · v0.1.0</div>
-        <h3 style="font-weight: 700; margin-bottom: 8px; font-size: 0.95rem;">System Install</h3>
-        <p style="font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-bottom: 20px; line-height: 1.6;">Start Menu shortcuts. All 3 OCR backends bundled.</p>
+        <h3 style="font-weight: 700; margin-bottom: 8px; font-size: 0.95rem;">System Install · Triple OCR</h3>
+        <p style="font-size: 0.8rem; color: rgba(255,255,255,0.55); margin-bottom: 20px; line-height: 1.6;">Start Menu shortcuts. All 3 OCR engines (Surya + PaddleOCR + GotOCR2) bundled offline.</p>
         <a
           href="https://github.com/arpanguria083-ux/SlidesEvaluators1/releases/download/v0.1.0/SlideForge.AI.Lite.Setup.0.0.0.exe"
           class="btn-download"
@@ -1111,22 +1129,25 @@
             <polyline points="7 10 12 15 17 10"/>
             <line x1="12" y1="15" x2="12" y2="3"/>
           </svg>
-          <span>Setup · 454 MB</span>
+          <span>Setup v0.1.0 · 454 MB</span>
         </a>
       </div>
     </div>
 
     <div class="download-meta" style="margin-top: 32px;">
       <div class="meta-item"><span class="meta-dot"></span> Windows 10/11 x64</div>
-      <div class="meta-item"><span class="meta-dot"></span> v0.1.0 Lite (Triple OCR)</div>
-      <div class="meta-item"><span class="meta-dot"></span> ~454 MB</div>
+      <div class="meta-item"><span class="meta-dot"></span> v0.1.0 Lite · Triple OCR</div>
+      <div class="meta-item"><span class="meta-dot"></span> ~454 MB · 100% Offline</div>
     </div>
 
-    <!-- Previous version -->
+    <!-- Previous version (legacy) -->
     <details style="max-width: 800px; margin: 40px auto 0; text-align: left; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 16px 24px;">
       <summary style="cursor: pointer; font-size: 0.85rem; color: rgba(255,255,255,0.6); font-weight: 600;">
-        Previous version (v0.0.0 — single OCR)
+        📦 Legacy build · v0.0.0 (Surya OCR only · ~350 MB)
       </summary>
+      <p style="font-size: 0.78rem; color: rgba(255,255,255,0.5); line-height: 1.6; margin-top: 12px;">
+        Smaller footprint — Surya OCR backend only. Suitable for clean, English-language decks where PaddleOCR/GotOCR2 fallback isn't needed. Most users should pick v0.1.0 above.
+      </p>
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px;">
         <a href="https://github.com/arpanguria083-ux/SlidesEvaluators1/releases/download/v0.0.0/SlideForge%20AI%20Lite-0.0.0-portable.exe" download style="display: block; padding: 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: var(--white); text-decoration: none; text-align: center; font-size: 0.8rem;">
           v0.0.0 Portable · 350 MB
